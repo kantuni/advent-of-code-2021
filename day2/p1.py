@@ -5,8 +5,8 @@ for line in stdin:
     cmd, value = line.split(" ")
     cmds.append((cmd, int(value)))
 
-x = 0
-y = 0
+x = 0 # horizontal position
+y = 0 # depth
 
 for cmd, value in cmds:
     if cmd == "forward":
