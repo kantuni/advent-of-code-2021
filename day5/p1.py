@@ -1,12 +1,9 @@
 from sys import stdin
-from pprint import pprint
-
-
-lines = []  # element of line (point1, point2) where point is (x, y)
 
 mx = -1
 my = -1
 
+lines = []
 for line in stdin:
     raw_p1, raw_p2 = line.split(" -> ")
     x1, y1 = map(int, raw_p1.split(","))
@@ -19,8 +16,6 @@ for line in stdin:
 
 R = my + 1
 C = mx + 1
-
-
 grid = [[0] * C for _ in range(R)]
 
 for p1, p2 in lines:
@@ -36,7 +31,6 @@ for p1, p2 in lines:
             grid[y1][x] += 1
 
 ans = 0
-
 for row in grid:
     for number in row:
         if number > 1:
