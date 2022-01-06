@@ -69,7 +69,7 @@ def decode(patterns: List[str]) -> Dict[str, str]:
     eight = memo[7][0]
     # 2, 3, 5 have 5 segments
     two_three_five = memo[5]
-    # 0, 6, 9 has 6 segments
+    # 0, 6, 9 have 6 segments
     zero_six_nine = memo[6]
 
     # 1) 7{acf} - 1{cf} = {a}
